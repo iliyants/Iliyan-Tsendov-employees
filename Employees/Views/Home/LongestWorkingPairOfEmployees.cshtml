@@ -1,0 +1,17 @@
+﻿@model EmployeePairOutput
+
+
+<div class="grid-container">
+    <div class="grid-item grid-title">First Employee Id</div>
+    <div class="grid-item grid-title">Second Employee Id</div>
+    <div class="grid-item grid-title">Common Project Id`s</div>
+    <div class="grid-item grid-title">Total Days Worked Together</div>
+    <div class="grid-item grid-body">@Model.FirstEmployeeId</div>
+    <div class="grid-item grid-body">@Model.SecondEmployeeId</div>
+    <div class="grid-item grid-body">@Model.ToString()</div>
+    <div class="grid-item grid-body">@Model.TotalDaysWorkedTogether</div>
+</div>
+
+
+
+<input  type="button" value="Return To File Pick" class="btn btn-primary btn-center" onclick="@("window.location.href='" + @Url.Action("Index", "Home") + "'");" />
